@@ -79,9 +79,9 @@ export default class SataionArrivals extends React.Component {
         Home
       </button>
       <div className="container">
-        <h1 className='title has-text-centered'>{this.state.arrivalsInformation[0].lineName} Line</h1>
-        <h1 className='subtitle has-text-centered'>{this.state.arrivalsInformation[0].stationName}</h1>
-        <div className="columns is-centered is-multiline is-mobile">
+        {this.state.arrivalsInformation[0] && <h1 className='title has-text-centered'>{this.state.arrivalsInformation[0].lineName} Line</h1>}
+        {this.state.arrivalsInformation[0] && <h1 className='subtitle has-text-centered'>{this.state.arrivalsInformation[0].stationName}</h1>}
+        <div className="columns is-centered is-multiline">
           {platforms.map((platform, index) => {
             return <div key={index} className="column is-half has-text-centered departureDisplay" >
               <h1 className='subtitle'>{platform}</h1>

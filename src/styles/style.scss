@@ -3,10 +3,13 @@
   box-sizing: border-box;
 }
 
+html {
+  background-color: rgb(247, 247, 247);
+}
+
 
 .section {
-  background-image: url('https://hdwallpaperim.com/wp-content/uploads/2017/08/25/132339-metro-underground-748x468.jpg');
-  background-color: wheat;
+  background-color: rgb(247, 247, 247);
   background-size: cover;
 }
 .search {
@@ -14,47 +17,29 @@
 }
 .lineBox {
   display: flex;
-  justify-content: unset;
-  // border: 1px solid black;
-  border-style: ridge;
-  background-color: whitesmoke;
   justify-content: space-around;
-  line-height: 3.5;
+  border: 1px solid black;
+  margin: 5px;
+  min-height: 50px;
   h2 {
-    // display: flex;
-    display: inline;
+    width: 50%;
+    margin: auto;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    flex-direction: column;
-    justify-content: space-between;
     color: darkslategray;
-    font-weight: bold;;
-    flex-wrap: wrap;
+    font-weight: bold;
+    }
   }
-  .lineName{
-    align-self: flex-start;
-    text-align: left;
-    margin: 0;
-  }
-  .lineStatus{
-    justify-self: flex-end;
-    // align-self: flex-end;
-    padding-right: 0;
-    margin-right: 10px;
-    text-align: right;
-  }
-  // p {
-  //   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  //   color: burlywood;
-  // }
+
+.spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-  // .lineName {
-  //   display: flex;
-  //   justify-content: space-between;
-  //   // font-family: Verdana, Geneva, Tahoma, sans-serif;
-  // }
+
+
 .Hero {
   .hero-body {
-    background-image: url('https://cdn.londonandpartners.com/visit/general-london/areas/62997-640x360-tube-sign.jpg');
+    background-image: url('https://www.architecture.com/image-library/imagecache/galleryitems/583.1.434.434.FFFFFF.jpeg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
@@ -75,14 +60,14 @@
   font-family: 'Courier New', Courier, monospace;
   font-style: italic;
   font-weight: bold;
-  height: 200px;
+  height: 400px;
 }
 .button {
   background-color: grey;
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 .card {
-  background-color: paleturquoise;
+  background-color: rgb(204, 221, 232);
   h4 {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color: darkslategrey;
@@ -128,4 +113,13 @@
 
 .time {
   color: green;
+}
+
+@media screen and (max-width: 815px) {
+  .lineBox {
+    flex-direction: column;
+  }
+  .arrivalBox {
+    flex-direction: column;
+  }
 }

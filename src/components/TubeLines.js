@@ -2,6 +2,7 @@ import React from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 import SearchBar from './common/SearchBar'
+import Spinner from './common/LoaderSpinner'
 
 const hexForTubeLines = {
   'Bakerloo': '#996633',
@@ -58,13 +59,13 @@ export default class TubeLines extends React.Component {
 
   render() {
     console.log(this.state.lineData)
-    if (!this.state.lineData) return <p>Waiting for Data</p>
+    if (!this.state.lineData) return <Spinner />
     return <section className="section">
       <SearchBar query={this.state.query} onChange={() => this.filterTheLines(event)} />
       <div className="container">
         <div className="columns is-centered is-multiline is-mobile">
 
-          <div className="column is-two-thirds has-text-centered">
+          <div className="column is-10-desktop is-12-mobile has-text-centered">
             {this.state.filteredLines.map((line, index) => {
               return <Link
                 key={index}
@@ -72,7 +73,7 @@ export default class TubeLines extends React.Component {
                 to={`/linestations/${line.id}`}
                 style={{ backgroundColor: hexForTubeLines[line.name] }}>
                 <h2 className="lineName">{line.name}</h2>
-                <p className="lineStatus">{line.lineStatuses[0].statusSeverityDescription}</p>
+                <h2 className="lineStatus">{line.lineStatuses[0].statusSeverityDescription}</h2>
               </Link>
 
             })}

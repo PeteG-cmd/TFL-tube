@@ -8,9 +8,9 @@ const StationCard = ({ commonName, id, handleClick, lineId }) => {
   myCommonName.pop()
   const newCommonName = myCommonName.join(' ')
 
-  return <div className='column is-two-quarter'>
+  return <div className='column is-one-quarter-desktop is-one-third-tablet'>
     <Link to={`/stations/${lineId}/${id}`}></Link>
-    <div className="card">
+    <div className="card has-text-centered">
       <div className="card-content">
         <div className="title">
           <h4 className="card-title">{newCommonName}</h4>

@@ -83,13 +83,14 @@ export default class LineStations extends React.Component {
 
   render() {
     const lineId = this.props.match.params.linename
-    console.log(this.state.lineStations)
+    console.log(this.state)
     if (!this.state.lineStations) return <LoaderSpinner />
     return <section className="stationsIndex">
       <div className="section">
+        <h1 className="title has-text-centered">{lineId.toUpperCase()} LINE</h1>
         <SearchBar query={this.state.query} onChange={() => this.filterTheStations(event)} />
         <div className="container">
-          <div className="columns is-multiline is-mobile">
+          <div className="columns is-multiline">
             {this.state.filteredStations.map((station, index) => {
               return <StationCard key={index} {...station} lineId={lineId} handleClick={() => this.handleClick(station)}>
               </StationCard>

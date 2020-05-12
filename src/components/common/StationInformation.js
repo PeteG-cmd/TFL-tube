@@ -4,10 +4,10 @@ const StationInformation = ({ station,  toggleModal }) => {
   return <div className="modal is-active">
     <div className="modal-background" onClick={() => toggleModal()}></div>
     <div className="modal-content ">
-      {/* <p>{station.commonName}</p> */}
+      <h2 className="subtitle has-text-centered">STATION FACILITIES</h2>
       {station.additionalProperties.map(property => {
         return <>
-        {(!(property.category === 'NearestPlaces')) && <div className="column is-half is-centered is-multiline"> {property.key}</div>}
+        {(!(property.category === 'NearestPlaces')) && <div className="column is-centered has-text-centered is-multiline"> {property.key}</div>}
         </>
       })}
     </div>
