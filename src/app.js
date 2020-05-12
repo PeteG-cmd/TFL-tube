@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter, Switch, Route } from 'react-router-dom'
+import { HashRouter, Switch, Route } from 'react-router-dom'
 import 'bulma'
 import './styles/style.scss'
 
@@ -12,7 +12,7 @@ import Hero from './components/common/Hero'
 
 
 const App = () => (
-  <BrowserRouter>
+  <HashRouter>
     <Hero />
 
     <Switch>
@@ -22,7 +22,7 @@ const App = () => (
 
 
     </Switch>
-  </BrowserRouter>
+  </HashRouter>
 
 
 
