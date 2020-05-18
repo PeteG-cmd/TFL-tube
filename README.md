@@ -1,7 +1,7 @@
 # Tube-Mapper
 
 ## Overview
-Tube-mapper is my first project using React.js, and was produced as part of the General Assembly Software Engineering Immersive Course.
+Tube-mapper is my first project using React, and was produced as part of the General Assembly Software Engineering Immersive Course.
 
 In a pair our task was to create, in 2 days, a front-end React app that utilised a public API and contained multiple pages.
 
@@ -23,7 +23,7 @@ You can view the project [here](https://peteg-cmd.github.io/project-2/)
 
 
 ## The Technologies Used
-* React.js
+* React
 * JavaScript (ES6)
 * HTML5
 * CSS3
@@ -185,6 +185,10 @@ Firstly I would like to use a little more of the information available from TFL.
 Secondly I would like to include some graphics to not only show how long until the train arrives, but to overlay this on a map to make the overall user experience better.
 
 Lastly, the look and feel of the app needs a bit of work, and although at the time we made the conscious decision to focus on the line data, i would like to make it look a little better too.
+
+## Successes
+
+The biggest success of this project was learning about how the API functioned, and ensuring that we were making the correct calls to receive only the data we needed. Although this API allows you to make a single call and receive almost all the information available, this would mean a lot of data was unnecessarily processed, slowing the application down. We managed to avoid this by being very specific wit out API calls.
 
 ## Lessons Learnt
 
