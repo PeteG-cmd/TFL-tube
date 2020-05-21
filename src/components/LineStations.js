@@ -67,8 +67,6 @@ export default class LineStations extends React.Component {
       filteredStations,
       query: searchQuery
     })
-
-
   }
 
   handleClick(station) {

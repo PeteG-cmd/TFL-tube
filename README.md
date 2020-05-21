@@ -13,11 +13,11 @@ You can view the project [here](https://peteg-cmd.github.io/project-2/)
 
 **Build a React application** that consumes a **public API**
 
-* **Consume a public API** – this could be anything but it must make sense for your project.
+* **Consume a public API** – this could be anything but it must make sense for the project.
 * **Have several components** - At least one classical and one functional.
 * **The app should include a router** - with several "pages".
 * **Include wireframes** - that you designed before building the app.
-* Have **semantically clean HTML** - you make sure you write HTML that makes structural sense.
+* Have **semantically clean HTML** - make sure to write HTML that makes structural sense.
 * **Be deployed online** and accessible to the public.
 
 
@@ -33,7 +33,7 @@ You can view the project [here](https://peteg-cmd.github.io/project-2/)
 
 ## The Approach
 
-The app consists of 3 main pages, each built from several components. The fist page shows all the available tube lines, along with their current status.
+The app consists of 3 main pages, each built from several components. The first page shows all the available tube lines, along with their current status.
 
 It also includes a search bar, which a feature on each page to allow users to filter the information shown if needed. The code to fetch the data from the TFL API and then to implement the filter is shown below.
 
@@ -145,7 +145,7 @@ This information is then sorted, and periodically updated every 10 seconds.
 
 The ordered arrival information is then shown to the user for each platform the station has, along with the trains final destination.
 
-Below this can be seen in desktop and mobile view. In mobile view the layout is adjusted using a media query to assess the screen width.
+This can be seen below in desktop and mobile view. In mobile view the layout is adjusted using a media query to assess the screen width.
 
 	//ASSESS SCREEN SIZE AND ADJUST MOBILE LAYOUT
 	
@@ -178,11 +178,11 @@ For example in the station information there are results such as 'PhoneNo', 'add
 
 ## Potential Future Features
 
-There are three bits of further work i would like to do on this project, but that we did not have time for initially. 
+There are three bits of further work I would like to do on this project, but initially, we did not have time to implement these.
 
-Firstly I would like to use a little more of the information available from TFL. Away from the issues around the station facilities data, the data on trains and lines is actually very good, and although we only allow the user to access one line at a time, the data contains the necessary information to allow a user to navigate from one station to another line, and even to bus routes, and i would like to include this.
+Firstly, I would like to use a little more of the information available from TFL. Away from the issues around the station facilities data, the data on trains and lines is actually very good, and although we only allow the user to access one line at a time, the data contains the necessary information to allow a user to navigate from one station to another line, and even to bus routes, and I would like to include this.
 
-Secondly I would like to include some graphics to not only show how long until the train arrives, but to overlay this on a map to make the overall user experience better.
+Secondly, I would like to include some graphics to not only show how long until the train arrives, but to overlay this on a map to make the overall user experience better.
 
 Lastly, the look and feel of the app needs a bit of work, and although at the time we made the conscious decision to focus on the line data, i would like to make it look a little better too.
 
@@ -192,4 +192,4 @@ The biggest success of this project was learning about how the API functioned, a
 
 ## Lessons Learnt
 
-For this project the main lesson is that we should have read the documentation around the TFL API in more detail before diving in to the coding. In retrospect there is a lot more information available to us, and better ways of accessing it than we initially thought. In future I will definitely spend longer looking at all the features of external API's before I implement them.
+For this project, the main lesson is that we should have read the documentation around the TFL API in more detail before diving in to the coding. In retrospect there is a lot more information available to us, and better ways of accessing it than we initially thought. In the future I will definitely spend longer looking at all the features of external API's before I implement them.
